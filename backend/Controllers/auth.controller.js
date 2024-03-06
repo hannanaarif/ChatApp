@@ -48,10 +48,9 @@ export const signup=async(req,res)=>{
 
     } catch (error) {
         console.log("Error in signup controller",error.message);
-        res.status(500).json({error:"Internal Server Error"})
+        res.status(500).json({error:"Internal Server Error from signup"});
     }
 }
-
 export const login=async(req,res)=>{
    try {
     const {username,password}=req.body;
@@ -79,7 +78,7 @@ export const login=async(req,res)=>{
 
    } catch (error) {
     console.log("Line 76 Error in login controller",error.message);
-    res.status(500).json({error:"Internal Server Error"})
+    res.status(500).json({error:"Internal Server Error login"})
    }
 }
 export const logout=(req,res)=>{
@@ -89,7 +88,7 @@ export const logout=(req,res)=>{
 
     } catch (error) {
         console.log("Error in logout controller",error.message);
-        res.status(500).json({error:"Internal Server Error"});
+        res.status(500).json({error:"Internal Server Error logout"});
     }
    
 }

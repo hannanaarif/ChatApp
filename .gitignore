@@ -1,4 +1,6 @@
 node_modules
-git remote add origin https://github.com/hannanaarif/ChatApp.git
+.env
+/*git remote add origin https://github.com/hannanaarif/ChatApp.git
 git branch -M main
-git push -u origin main
+git push -u origin main*/
+
